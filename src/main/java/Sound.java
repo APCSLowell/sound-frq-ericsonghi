@@ -41,18 +41,17 @@ return x;
   public void trimSilenceFromBeginning()
   {
     /* to be implemented in part (b) */
-    int count = 0;
-    for(int i = 0; i < samples.length; i++){
-      if(samples[i] == 0){
-        count++;
-      }
-      else{
-        break;
-      }
-    }
-    int [] newSamples = new int[count];
-      for(int j = count; j > 0; j--){
-        samples.remove(j);
-      }
+   int y = 0;
+for(int i = 0; i < samples.length; i++){
+  if(samples[i] == 0){
+    y++;
+  }else{
+    break;
   }
+}
+  int[] newSample = new int[samples.length - y];
+  for(int i = 0; i < newSample.length; i++){
+    newSample[i] = Sample[i + y];
+  }
+
 }
