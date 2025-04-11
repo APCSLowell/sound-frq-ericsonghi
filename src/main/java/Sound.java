@@ -50,7 +50,7 @@ for(int i = 0; i < samples.length; i++){
 }
   int[] newSample = new int[samples.length - y];
   for(int i = 0; i < newSample.length; i++){
-    newSample[i] = Sample[i + y];
+    newSample[i] = SAMPLES[i + y];
   }
 
 }
