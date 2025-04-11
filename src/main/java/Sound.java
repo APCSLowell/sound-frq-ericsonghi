@@ -1,6 +1,5 @@
 import java.util.*;
-public class Sound
-{
+public class Sound{
   /** the array of values in this sound; guaranteed not to be null */
   int[] samples;
 
@@ -54,4 +53,5 @@ for(int i = 0; i < samples.length; i++){
     newSample[i] = Sample[i + y];
   }
 
+}
 }
