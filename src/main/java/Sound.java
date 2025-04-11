@@ -16,7 +16,7 @@ public class Sound{
   {  
     /* to be implemented in part (a) */
     int x = 0;
-    for(int i = 0; i < Samples.length; i++){
+    for(int i = 0; i < samples.length; i++){
       if(samples[i] > limit){
       samples[i] = limit;
       x++;
@@ -50,7 +50,7 @@ for(int i = 0; i < samples.length; i++){
 }
   int[] newSample = new int[samples.length - y];
   for(int i = 0; i < newSample.length; i++){
-    newSample[i] = SAMPLES[i + y];
+    newSample[i] = samples[i + y];
   }
 
 }
