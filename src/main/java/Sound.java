@@ -20,8 +20,7 @@ public class Sound{
       if(samples[i] > limit){
       samples[i] = limit;
       x++;
-  }
-  if(samples[i] < -limit){
+  }else if(samples[i] < -limit){
     samples[i] = -limit;
     x++;
       }
@@ -52,7 +51,5 @@ for(int i = 0; i < samples.length; i++){
   for(int i = 0; i < newSample.length; i++){
     newSample[i] = samples[i + y];
   }
-
-}
   samples = newSample;
 }
